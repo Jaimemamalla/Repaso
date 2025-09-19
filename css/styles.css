@@ -1,3 +1,43 @@
 *{
-    background-color: aqua;
+    /* background-color: aqua; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* font-size: 12px; */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 1.2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+header {
+    background-color: rgb(42, 54, 165);
+    color: aliceblue;
+}
+
+.headerp {
+    font-size: 2rem;
+    color: rgb(210, 255, 12);
+}
+
+nav > .menu_pr {
+    list-style: none;
 }
