@@ -16,3 +16,5 @@ Todos los elementos de HTML son cajas y estas tienen diferentes propiedades como
 Selectores combinados de CSS;
 header > p: esto seleccopna todos los elementos p que son hijos directos de header
 header p: selecciona todos los p que son hijos de un header a cualquer nivel (puede haber un p dentro de un div)
+
+efecto hover sobre cda opción del menú, cuando pase por encima, que se genere una cajita y cambie de color

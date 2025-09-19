@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    color: black;
+    text-decoration: none;
     /* font-size: 12px; */
 }
 
@@ -20,6 +22,7 @@ footer {
 
 h1 {
     font-size: 3rem;
+    color: aliceblue;
 }
 
 img {
@@ -31,6 +34,9 @@ img {
 header {
     background-color: rgb(42, 54, 165);
     color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .headerp {
@@ -40,4 +46,26 @@ header {
 
 nav > .menu_pr {
     list-style: none;
+}
+
+.menu_pr {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+
+nav {
+    background-color: cyan;
+}
+
+nav > .menu_pr a:hover {
+    color: white;
+    background-color: blue;
+    border-radius: 4px;
+}
+
+nav > .menu_pr a{
+    padding: 0.5rem 1rem;
 }
