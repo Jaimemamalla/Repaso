@@ -22,3 +22,7 @@ efecto hover sobre cda opción del menú, cuando pase por encima, que se genere 
 Variables de css
 Las declaramso al principio del css en la pseudo clase :root(), cuando las declaramos, los nombres tienen que empezar con --nombre-de-variable
 LLamamos con la función var(--valor)
+
+:first-child
+:last-child
+:nth-child(4)

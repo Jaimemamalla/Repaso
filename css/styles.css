@@ -77,3 +77,38 @@ nav > .menu_pr a{
     transition: 0.3s;
     border-radius: 8px;
 }
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* padding: 3rem; */
+}
+
+main > .hero {
+    display: flex;
+}
+
+main > .hero > div.content-features {
+    display: flex;
+    gap: 1rem;
+    width: 60%;
+}
+
+main > .hero > div.content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.btn-primary {
+    background-color: var(--bg-color-menu);
+    color: black;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
