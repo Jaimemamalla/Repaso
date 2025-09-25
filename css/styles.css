@@ -1,3 +1,10 @@
+/* Declaración de variables */
+:root {
+    --text-color: aliceblue;
+    --bg-color-primary: rgba(0, 255, 255);
+    --bg-color-menu: rgba(240, 248, 255);
+}
+
 *{
     /* background-color: aqua; */
     margin: 0;
@@ -22,7 +29,7 @@ footer {
 
 h1 {
     font-size: 3rem;
-    color: aliceblue;
+    color: var(--bg-color-menu);
 }
 
 img {
@@ -33,7 +40,7 @@ img {
 
 header {
     background-color: rgb(42, 54, 165);
-    color: aliceblue;
+    color: var(--bg-color-menu);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -57,15 +64,16 @@ nav > .menu_pr {
 }
 
 nav {
-    background-color: cyan;
+    background-color: var(--bg-color-primary)
 }
 
 nav > .menu_pr a:hover {
-    color: white;
+    color: var(--bg-color-menu);
     background-color: blue;
-    border-radius: 4px;
 }
 
 nav > .menu_pr a{
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
+    transition: 0.3s;
+    border-radius: 8px;
 }
