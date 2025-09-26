@@ -26,3 +26,6 @@ LLamamos con la función var(--valor)
 :first-child
 :last-child
 :nth-child(4)
+
+seccion #prices
+deben incluir un titulo del precio, el numero del precio, un icono y un botón

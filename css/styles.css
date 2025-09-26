@@ -88,6 +88,7 @@ main {
 
 main > .hero {
     display: flex;
+    gap: 5rem;
 }
 
 main > .hero > div.content-features {
@@ -146,6 +147,40 @@ main > section.hero > div.content-features > .column > .feature > div {
     width: 100%;
     height: 100%;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    color: whitesmoke;
+    background: #ffffff;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+main > section.hero > div.content-features > .column > .feature > div > h3,h4 {
+    color: aliceblue;
+}
+
+.feature-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    background: rgba(0,0,0,0.3);
+    pointer-events: none;
+}
+
+.feature-overlay span:last-child {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
 }
 
 /* FULL WIDTH */
@@ -171,9 +206,6 @@ main > section.hero > div.content-features > .column > .feature > div {
 }
 
 
-
-
-
 /* GALLERY */
 
 #gallery {
@@ -188,6 +220,58 @@ main > section.hero > div.content-features > .column > .feature > div {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1rem;
+}
+
+/* PRICES */
+
+#prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+#prices h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+}
+
+.price-card {
+    background: #b6d5ff;
+    border-radius: 16px;
+    padding: 2rem 3rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.price-number {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.btn-primary {
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#prices {
+    width: 100%;
+}
+
+#prices > .price-card {
+    display: inline-block;
+    vertical-align: top;
 }
 
 
