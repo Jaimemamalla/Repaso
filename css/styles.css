@@ -233,20 +233,20 @@ main > section.hero > div.content-features > .column > .feature > div > h3,h4 {
 }
 
 #prices h2 {
-    margin-bottom: 2rem;
     font-size: 2.5rem;
     color: #000000;
     text-align: center;
 }
 
 .price-card {
-    background: #b6d5ff;
+    background: #f7f7f7;
     border-radius: 16px;
     padding: 2rem 3rem;
     margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40%;
 }
 
 .price-icon {
