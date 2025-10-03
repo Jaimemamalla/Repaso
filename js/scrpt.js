@@ -59,4 +59,32 @@ let arr_animals = ["cat", "dog", "cow", 7];
 
 console.log(arr_animals[1]);
 
+//Ejemplo de objeto de JS
 
+let user154 = {
+    name: "Jaime",
+    last_name: "Amaya",
+    age: 37,
+    location: "Madrid",
+    is_driver: true
+};
+
+let product174 = {
+    name: "T-shirt",
+    style: "Long",
+    color: ["#FFFFFF", "#000000", "#FF5733"],
+};
+
+console.log(user154); //Accedemos a todo el objeto
+console.log(user154.last_name); //Accedemos a una propiedad concreta del objeto
+
+//La función de uilidad alert(), crea una ventana en el navegador con un mensaje
+// alert("Hola, soy un mensaje");
+console.log();
+let username = window.prompt("¿Cómo te llamas?");
+alert("Hola, " + username);
+
+//Funciones propias de JS
+function calcTotal() {
+    
+}

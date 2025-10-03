@@ -83,3 +83,24 @@ Estas operaciones dan como resultado un tipo de dato especial que se llama boole
 - Arrays (lista) -> se trata de un tipo de dato complejo que me permite guardar una lista o colección de otros tipos de datos. Esto puede ser de un mismo tipo o de diferentes tipos. []
 
 JS empieza a contar desde 0 
+
+- Objeto (object): es un tipo de dato complejo que me permite guardar de forma ordenada (clave:valor) y acceder a estos datos una vez declarados. 
+
+- null y undefined
+
+## FUNCIONES/MÉTODOS DE JS
+
+Las funciones o métodos son un conjunto de líneas de código que cumplen un trabajo determinado.
+
+Las funciones trabajan como una "caja negra" cuando ya son funciones ya definidas del lenguaje, pero también tenemos la posibilidad de definir nuestras propias funciones. Podemos decir que tenemos dos tipos de funciones: 
+
+- Las funciones de JS ya definidas dentro del propio código interno del lenguaje, las cuales podremos llamar y usar. Por ejemplo, las funciones alert() y log(), son funciones de este tipo que se conocen como built-in.
+
+- Las funciones que nosotros mismos definimos en nuestro código. JS nos permite definir tantas funciones como queramos y usarlas tantas veces como necesitemos. 
+
+Estas funciones se crean una sola vez en nuestro codigo y luego las podemos usar tantas veces como queramos.
+
+Para crear y usar una función popia vamos a seguir estos pasos:
+1. Declaramos la función propia con la palabara reservada: function 
+2. Le damos un nombre a esta nueva función, el nombre lo decidimos nosotros y debe representar de forma clara y posible el trabjo que lleva a cabo dicha función. El nombre de esta función incluye al final y pegado unos parétesis. Detrás de los parétesis abrimos {}
+3. Dentro de las llaves escribiremos el código interno de la función 
