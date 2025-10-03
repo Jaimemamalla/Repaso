@@ -103,4 +103,8 @@ Estas funciones se crean una sola vez en nuestro codigo y luego las podemos usar
 Para crear y usar una función popia vamos a seguir estos pasos:
 1. Declaramos la función propia con la palabara reservada: function 
 2. Le damos un nombre a esta nueva función, el nombre lo decidimos nosotros y debe representar de forma clara y posible el trabjo que lleva a cabo dicha función. El nombre de esta función incluye al final y pegado unos parétesis. Detrás de los parétesis abrimos {}
-3. Dentro de las llaves escribiremos el código interno de la función 
+3. Dentro de las llaves escribiremos el código interno de la función. 
+4. Cuando queramos usar la función la llamaremos o invocaremos por su nombre.
+
+Los datos pueden entrar dentro de una función como parámetros en los paréntesis. Los parámetros se introducen en la función en el momento de la llamada.
+

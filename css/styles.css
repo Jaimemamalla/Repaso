@@ -1,35 +1,22 @@
-/* Declaración de variables */
+/* DECLARACIÓN DE VARIABLES DE CSS */
 :root {
     --text-color: aliceblue;
-    --bg-color-primary: rgba(0, 255, 255);
-    --bg-color-menu: rgba(240, 248, 255);
+    --bg-color-primary: rgb(106, 90, 205);
+    --bg-color-menu: rgb(33, 0, 64);
+    --transition-time: 0.3s;
 }
 
-*{
-    /* background-color: aqua; */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    color: black;
-    text-decoration: none;
-    /* font-size: 12px; */
+    /* font-size: 28px; */
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-header,
-nav,
-main,
-footer {
-    padding: 1.2rem;
-}
-
-h1 {
-    font-size: 3rem;
-    color: var(--bg-color-menu);
 }
 
 img {
@@ -38,47 +25,61 @@ img {
     vertical-align: middle;
 }
 
-header {
-    background-color: rgb(42, 54, 165);
-    color: var(--bg-color-menu);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+header,
+nav,
+main, 
+footer {
+    padding: 1.2rem;
 }
 
-.headerp {
-    font-size: 2rem;
-    color: rgb(210, 255, 12);
+h1 {
+    font-size: 3rem;
+}
+
+
+header {
+    background-color: slateblue;
+    /* background-color: rgba(1, 1, 1, 0.5); */
+    color: var(--text-color);
+}
+
+
+header > div > p {
+    color: red;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color:rgb(33, 0, 64);
 }
 
 nav > .menu_pr {
     list-style: none;
-}
-
-.menu_pr {
     display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    padding: 1rem 2rem;
+    justify-content: space-evenly;
+}
+
+/* nav > .menu_pr > li {
+    margin: 0 0.3rem;
+} */
+
+nav > .menu_pr a {
+    text-decoration: none;
+    color: var(--text-color);
     font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    transition: var(--transition-time);
 }
 
-nav {
-    background-color: var(--bg-color-primary)
-}
-
+/* Selector para hover sobre las opciones del menú */
 nav > .menu_pr a:hover {
     color: var(--bg-color-menu);
-    background-color: blue;
+    background-color: var(--text-color);
 }
 
-nav > .menu_pr a{
-    padding: 1rem 2rem;
-    transition: 0.3s;
-    border-radius: 8px;
-}
 
-/* main */
+/* MAIN */
 
 main {
     display: flex;
@@ -86,50 +87,35 @@ main {
     /* padding: 3rem; */
 }
 
-main > .hero {
+main > section.hero {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
 }
 
-main > .hero > div.content-features {
-    display: flex;
-    gap: 1rem;
-    
-}
-
-main > .hero > div.content-text {
+main > section.hero > div.content-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 40%;
-}
-
-.btn-primary {
-    background-color: var(--bg-color-menu);
-    color: black;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.rem;
-    font-weight: bold;
-    border-radius: 8px;
+    align-items: center;
 }
 
 main > section.hero > div.content-features {
-    display:flex;
+    display: flex;
     gap: 1rem;
-    width: 50%;
+    width: 60%;
 }
 
 main > section.hero > div.content-features > .column {
-    flex:1;
+    flex: 1;
 }
 
 main > section.hero > div.content-features > .column:last-child {
     display: flex;
     flex-direction: column;
-    gap:1rem;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
 }
-
 
 main > section.hero > div.content-features > .column > .feature {
     position: relative;
@@ -141,7 +127,7 @@ main > section.hero > div.content-features > .column > .feature > img {
 }
 
 main > section.hero > div.content-features > .column > .feature > div {
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -151,37 +137,11 @@ main > section.hero > div.content-features > .column > .feature > div {
     flex-direction: column;
     justify-content: end;
     align-items: end;
-    color: whitesmoke;
-    background: #ffffff;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.5) 100%);
-}
-
-main > section.hero > div.content-features > .column > .feature > div > h3,h4 {
     color: aliceblue;
+    background: #ffffff;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
-.feature-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    background: rgba(0,0,0,0.3);
-    pointer-events: none;
-}
-
-.feature-overlay span:last-child {
-    font-size: 1.2rem;
-    font-weight: normal;
-    margin-top: 0.5rem;
-}
 
 /* FULL WIDTH */
 #full-w > div {
@@ -189,16 +149,14 @@ main > section.hero > div.content-features > .column > .feature > div > h3,h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #full-w > div > h3 {
-    position: absolute;
-    color:aliceblue;
-    opacity: 0;
-    transition: 0.6s;
     font-size: 2.5rem;
-
+    opacity: 0;
+    color: aliceblue;
+    position: absolute;
+    transition: 0.6s;
 }
 
 #full-w > div:hover > h3 {
@@ -209,18 +167,33 @@ main > section.hero > div.content-features > .column > .feature > div > h3,h4 {
 /* GALLERY */
 
 #gallery {
-    padding: 4rem 0rem;
+    padding: 4rem 0;
 }
 
-#gallety h2 {
+#gallery > h2 {
     margin-bottom: 2rem;
 }
 
-#gallery .gallery-cont {
+#gallery > .gallery-cont {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1rem;
 }
+
+
+
+/* MEDIA QUERY */
+
+/* Cuando el viewport mida menos de 456px se activa este media query */
+@media screen and (max-width: 456px) {
+    
+    #gallery > .gallery-cont {
+        grid-template-columns: auto;
+    }
+
+
+}
+
 
 /* PRICES */
 
@@ -260,7 +233,16 @@ main > section.hero > div.content-features > .column > .feature > div > h3,h4 {
     margin: 1rem 0;
 }
 
+
 .btn-primary {
+    background-color: var(--bg-color-menu);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.rem;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 60%;
     margin-top: 1rem;
     cursor: pointer;
 }
@@ -272,13 +254,4 @@ main > section.hero > div.content-features > .column > .feature > div > h3,h4 {
 #prices > .price-card {
     display: inline-block;
     vertical-align: top;
-}
-
-
-/* MEDIA QUERYS */
-
-@media screen and (max-width:456px) {
-    #gallery .gallery-cont {
-    grid-template-columns: auto;
-}
 }

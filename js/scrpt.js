@@ -80,11 +80,40 @@ console.log(user154.last_name); //Accedemos a una propiedad concreta del objeto
 
 //La función de uilidad alert(), crea una ventana en el navegador con un mensaje
 // alert("Hola, soy un mensaje");
-console.log();
-let username = window.prompt("¿Cómo te llamas?");
-alert("Hola, " + username);
+console.log("Último log");
+// let username = window.prompt("¿Cómo te llamas?");
+// alert("Hola, " + username);
 
 //Funciones propias de JS
-function calcTotal() {
+
+let porduct01 = 12.99;
+let porduct02 = 4.50;
+let porduct03 = 23.77;
+let porduct04 = 0.99;
+
+//DECLARACIÓN DE LA FUNCIÓN
+function calcTotal(param1, param2) {
+    // console.log("Este código está dentro de una función");
+
+    let total_price = param1 + param2;
+    console.log("El precio total es: " + total_price);
+}
+
+//LLAMADA A LA FUNCIÓN
+calcTotal(porduct01, porduct02);
+calcTotal(porduct02, porduct03);
+calcTotal(porduct03, porduct04);
+
+// function greeting() {
+//     console.log("Hola caraculo");
+// }
+
+//Crear una función que se llame GreatUser() que haga dos cosas:
+//1. Pregunte el nombre del usuario (y guardar la respuesta)
+//2. Mostrar el nombre de usuario con un saludito en un poop-up
+function greeting() {
+    let username = window.prompt("¿Cómo te llamas?");
+    alert("Hola " + username);
+    console.log(username);
     
 }
