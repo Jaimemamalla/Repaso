@@ -117,3 +117,17 @@ function greeting() {
     console.log(username);
     
 }
+
+//Desde nuestro archivo de JS, podemos usar varias funciones de built-in para seleccionar uno o varios elementos del HTML 
+
+//El selector de JS que más vamos a usar es este:
+
+let btn = document.querySelector('p');
+console.log(btn);
+
+//console.log(docuemnt);
+
+//Para hacer referencia al documento de HTML, llamaremos a la variable "document". Esta variable ya está definida, no es necesario que la creemos nosotros y guarda en su interior todo tipo de HTML.
+
+//Cuando quiero seleccionar solo un elemento usaré la función querySelector(); y si queremos seleccionar varios elementos usaremos querySelectorAll();
+

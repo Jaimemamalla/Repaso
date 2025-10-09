@@ -108,3 +108,9 @@ Para crear y usar una función popia vamos a seguir estos pasos:
 
 Los datos pueden entrar dentro de una función como parámetros en los paréntesis. Los parámetros se introducen en la función en el momento de la llamada.
 
+## SELECTORES DE JS:
+
+Funcionan de manera similar a los selectores de CSS
+
+1) querySelector("p") -> selecciona el primero que coincide con la búsqueda
+2) querySelectorAll("div") -> selecciona todos los elementos que coincidan con la búsqueda y generan un array.
